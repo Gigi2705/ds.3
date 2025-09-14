@@ -20,7 +20,7 @@ public class RefeicaoController {
     public Refeicao criar(@RequestBody Refeicao refeicao) {
         return repository.save(refeicao);
     }
-
+    
     @GetMapping
     public List<Refeicao> listar() {
         return repository.findAll();
